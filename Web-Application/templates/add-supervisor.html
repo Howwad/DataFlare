@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Insert Warranty</title>
+    <style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			color: #333;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+
+		form {
+			background-color: #fff;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+			width: 50%;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #333;
+			font-weight: bold;
+		}
+
+		input[type="text"], input[type="email"], input[type="date"], input[type="number"]  {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #772828;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		.back-Button{
+            margin-left: 10% !important;
+            margin-right: 20% !important;
+        }
+
+		button {
+            background-color: #772828; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+            margin-left: 45%;
+        }
+
+		input[type="submit"]:hover {
+			background-color: #7d3434;
+		}
+	</style>
+</head>
+<body>
+	<div style="display: flex; align-items: center;">
+        <button class="back-Button" onclick="window.location.href = '/supervisor';" >Back</button>
+        <h1>Insert Suppervisor</h1>
+    </div>
+    <form action="/supervisor/insert" method="post">
+        <label for="supervisor_id">Id:</label>
+		<input type="number" id="supervisor_id" name="supervisor_id" min="0" max="5" value="0" required>
+
+		<label for="role">Role:</label>
+		<input type="text" id="role" name="role" >
+
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+
+        <label for="contact_information">Contact Info:</label>
+		<input type="text" id="contact_information" name="contact_information">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

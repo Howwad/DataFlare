@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Crushers</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,700" rel="stylesheet">
+  <style>
+    /* Reset styles for consistency */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #772828;
+    }
+
+    /* Header styles */
+    header {
+    background-image: linear-gradient(to right, #ffd2dd, #acb6e5);
+      background-size: cover;
+      background-position: center;
+      padding: 50px;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      color: #772828;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-image: linear-gradient(to right, #ffd2dd, #acb6e5);
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.2);
+    }
+
+    /* Main content styles */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 36px;
+      margin-bottom: 20px;    
+      margin-top: 5%;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 40px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #74ebd5;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    button {
+            background-color: #772828;
+            border: none;
+            color: white;
+            padding: 2% 5%;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+  </style>
+</head>
+<body>
+    <header style="display: flex; align-items: center;">
+        <img src="{{url_for('static', filename='AUB_Main_Horizontal.jpg')}}" style="width: 250px;"/>
+        <h1>CMPS244 - Database Systems - SP22-23</h1>
+      </header>
+  <main>
+    <h2>Project Description</h2>
+    <p>As technology advances and the demand for greater efficiency and cost savings in numerous industries, the usage of robots in our daily lives is becoming more and more widespread. Although utilizing robots in our everyday lives has many advantages, the truth is that they are not flawless and occasionally have errors and bugs. That’s why we have decided to develop a Robot Error Log Database system which will offer a central location for recording and tracking robot-related issues, enabling us to spot trends and fundamental causes of difficulties and rectify them promptly and effectively. The database will include information about the type of error or bug, the date and time it occurred, the affected robot, and any relevant diagnostic information.</p>
+
+    <h2>Navigate In Our Database!</h2>
+    <button onclick="window.location.href = '/warranty';" >Warranty</button>
+    <button onclick="window.location.href = '/error';" >Error</button>
+    <button onclick="window.location.href = '/supervisor';" >Supervisor</button>
+    <button onclick="window.location.href = '/robot';" >Robot Component</button>
+    <h2>Some Interesting Queries!</h2>
+    <button onclick="window.location.href = '/robot/warranty';" >List the robot componets with its warranty</button>
+    <button onclick="window.location.href = '/robot/machine';" >List the robot componets with its machine </button>
+
+    
+
+      </main>
+      </body>
+      </html>
+
